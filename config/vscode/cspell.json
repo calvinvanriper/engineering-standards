@@ -10,6 +10,7 @@
     "localStorage",
     "itemId",
     "Makefile",
-    "Makefiles"
+    "Makefiles",
+    "gitmessage"
   ]
 }
