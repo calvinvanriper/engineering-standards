@@ -45,7 +45,7 @@ echo "Updating authority mirror..."
 cp -r config/prettier/* "$TARGET_REPO/config/prettier/"
 cp -r config/eslint/* "$TARGET_REPO/config/eslint/"
 cp -r config/vscode/* "$TARGET_REPO/config/vscode/"
-cp -r git/* "$TARGET_REPO/git/"
+cp -r git/. "$TARGET_REPO/git/"
 cp -r .github/* "$TARGET_REPO/.github/"
 
 # Sync enforcement layer
