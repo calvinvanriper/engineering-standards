@@ -13,7 +13,10 @@
 # - Explain WHY the change exists, not just WHAT changed
 # - Mention validation steps if relevant (tests, manual checks)
 #
+# BREAKING CHANGES (optional):
+# - If a change breaks consumers, describe it clearly here.
+#
 # Examples:
 # feat(auth): add JWT login flow
 # fix(api): handle missing user id in request
-# docs(standards): clarify commit scope rules
+# docs(standards): clarify scope rules
