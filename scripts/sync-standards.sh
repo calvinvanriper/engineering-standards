@@ -42,15 +42,33 @@ mkdir -p "$TARGET_REPO/config/prettier" \
 
 # Sync authority mirror (copy contents, not the parent folder)
 echo "Updating authority mirror..."
-cp -r config/prettier/. "$TARGET_REPO/config/prettier/"
-cp -r config/eslint/. "$TARGET_REPO/config/eslint/"
-cp -r config/vscode/. "$TARGET_REPO/config/vscode/"
-cp -r git/. "$TARGET_REPO/git/"
-cp -r .github/. "$TARGET_REPO/.github/"
+
+if [ -d "config/prettier" ]; then
+  cp -r config/prettier/. "$TARGET_REPO/config/prettier/"
+fi
+
+if [ -d "config/eslint" ]; then
+  cp -r config/eslint/. "$TARGET_REPO/config/eslint/"
+fi
+
+if [ -d "config/vscode" ]; then
+  cp -r config/vscode/. "$TARGET_REPO/config/vscode/"
+fi
+
+if [ -d "git" ]; then
+  cp -r git/. "$TARGET_REPO/git/"
+fi
+
+if [ -d ".github" ]; then
+  cp -r .github/. "$TARGET_REPO/.github/"
+fi
 
 # Sync enforcement layer
 echo "Updating enforcement layer..."
-cp -r config/vscode/. "$TARGET_REPO/.vscode/"
+
+if [ -d "config/vscode" ]; then
+  cp -r config/vscode/. "$TARGET_REPO/.vscode/"
+fi
 
 echo ""
 echo "Standards sync complete."
