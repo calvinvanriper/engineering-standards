@@ -1,0 +1,19 @@
+<type>(<scope>): <summary>
+
+# Allowed types:
+#   feat | fix | refactor | docs | style | chore | test
+#
+# Rules:
+# - Use present tense: "add", "fix", "update"
+# - Keep the summary concise and descriptive
+# - Do not end the summary with a period
+# - Wrap body lines at ~72 characters
+#
+# Body (optional):
+# - Explain WHY the change exists, not just WHAT changed
+# - Mention validation steps if relevant (tests, manual checks)
+#
+# Examples:
+# feat(auth): add JWT login flow
+# fix(api): handle missing user id in request
+# docs(standards): clarify commit scope rules
