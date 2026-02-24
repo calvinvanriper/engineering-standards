@@ -1,1 +1,16 @@
-Node
+# OS / Editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/settings.json
+.vscode/launch.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Caches
+.eslintcache
+.cache/
