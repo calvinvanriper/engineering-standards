@@ -10,6 +10,8 @@ This repository contains **standards, templates, and configuration baselines** o
 
 ---
 
+## **Engineering Standards:** v1.0.0 · **Baseline Authority:** engineering-standards
+
 ## Goals
 
 - Establish production-grade engineering discipline
