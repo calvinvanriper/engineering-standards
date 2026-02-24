@@ -3,8 +3,11 @@
 Thumbs.db
 *.swp
 *.swo
-.vscode/settings.json
+
+# VS Code personal/debug files only (keep standards files committed)
 .vscode/launch.json
+.vscode/tasks.json
+.vscode/*.code-workspace
 
 # Logs
 npm-debug.log*
