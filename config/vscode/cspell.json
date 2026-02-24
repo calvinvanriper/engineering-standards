@@ -11,6 +11,7 @@
     "itemId",
     "Makefile",
     "Makefiles",
-    "gitmessage"
+    "gitmessage",
+    "eslintcache"
   ]
 }
