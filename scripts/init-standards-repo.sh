@@ -90,7 +90,7 @@ EOF
 # Initialize git repository
 echo "Initializing git..."
 cd "$TARGET_REPO"
-git init
+git init -b main
 git config commit.template git/.gitmessage.txt
 
 git add .
