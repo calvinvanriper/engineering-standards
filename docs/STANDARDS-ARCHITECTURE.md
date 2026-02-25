@@ -209,8 +209,6 @@ This lifecycle ensures safe, traceable evolution of standards.
 
 ---
 
----
-
 ## Upgrading Standards in Existing Repositories
 
 When engineering standards are updated in engineering-standards/config/,
@@ -221,32 +219,43 @@ drift.
 
 1. Update standards in the authority layer:
 
+```bash
 - engineering-standards/config/
+```
 
 1. Sync enforcement inside the standards repository so local validation uses
    the new baseline:
 
 Run:
+
+```bash
 cp config/vscode/cspell.json .vscode/cspell.json
+```
 
 (Repeat for any enforcement files as needed.)
 
 1. Propagate updates to a target repository using the sync script:
 
 Run:
+
+```bash
 ./scripts/sync-standards.sh ../target-repository
+```
 
 1. Commit changes in the target repository:
 
 Run:
+
+```bash
 git add config .vscode git .github
 git commit -m "chore(standards): sync baseline standards"
 git push
+```
 
 ### Notes
 
-- Syncing updates refreshes both the repository mirror (config/) and
-  enforcement layer (.vscode/).
+- Syncing updates refreshes both the repository mirror (`config/`) and
+  enforcement layer (`.vscode/`).
 - Always review git status before committing to confirm only expected files
   changed.
 - The sync script is safe to run multiple times and is designed to be
